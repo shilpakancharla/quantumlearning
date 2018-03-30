@@ -1,4 +1,4 @@
-import tensorflow as tf
+import tensorflow as tf #get keras library as well
 
 x = tf.Variable(2, name='x', dtype=tf.float32)
 log_x = tf.log(x)
