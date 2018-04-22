@@ -19,6 +19,8 @@ Computational models that use machine learning principles to solve quantum mecha
 
 ## Future Directions
 
+Please contact me if you are interested in extending/improving this project in any of the further points! :)
+
 - extend study to three dimension solutions
 
 - increase layers in neural network
