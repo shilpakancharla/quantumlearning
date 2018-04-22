@@ -19,14 +19,14 @@ Computational models that use machine learning principles to solve quantum mecha
 
 ## Future Directions
 
-Please contact me if you are interested in extending/improving this project in any of the further points! :)
+Please contact me if you are interested in extending/improving this project in any of the further points! 😄
 
-- extend study to three dimension solutions
+- extend study to three dimension solutions  😳
 
-- increase layers in neural network
+- increase layers in neural network 🧠
 
-- using neural network for other aspects of Schrödinger’s equations (tell us other information about quantum state)
+- using neural network for other aspects of Schrödinger’s equations (tell us other information about quantum state) 🔮
 
-- cross-validation techniques
+- cross-validation techniques 📈
 
-- feature engineering to further reduce errors
+- feature engineering to further reduce errors 📉
