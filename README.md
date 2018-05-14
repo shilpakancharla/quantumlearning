@@ -1,5 +1,8 @@
 # quantumlearning
-Applications of Machine Learning in Quantum Mechanics. 
+
+**Applications of Machine Learning in Quantum Mechanics: Using Neural Networks to Solve Schrödinger’s Equation.**
+
+These solutions can first be found in one-dimensional settings, and then slowly we move to two-dimensional and three-dimensional settings, with the goal of reducing the neural network’s performance test error.
 
 ## Abstract
 
