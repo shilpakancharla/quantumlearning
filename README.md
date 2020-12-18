@@ -1,35 +1,13 @@
-# quantumlearning
-
-**Applications of Machine Learning in Quantum Mechanics: Using Neural Networks to Solve Schrödinger’s Equation.**
-
-These solutions can first be found in one-dimensional settings, and then slowly we move to two-dimensional and three-dimensional settings, with the goal of reducing the neural network’s performance test error.
+# Schrodinger Equation Deep Learning Project
 
 ## Abstract
 
-Computational models that use machine learning principles to solve quantum mechanics problems promise to deliver accurate as possible information about a quantum system at high speeds. These two fields are related to each other by linear algebra, and it is imperative we examine the redundancy in solving Schrödinger’s equations throughout different types of potential situations: step, piecewise linear and random Fourier series. This project uses TensorFlow package in Python to initially generate 1-D potentials and then solve them using a gradient descent method. These potentials and their respective solutions are partitioned into sets of training data and test data. The training data is inputted into a simple neural network with two hidden layers. The mean square distance between the “correct” solutions and the output of the neural network is the cost function and the gradient descent on the network “solves” the problem. 
+Computational models that use machine learning principles to solve quantum mechanics problems promise to deliver accurate as possible information about a quantum system at high speeds. These two fields are related to each other by linear algebra, and it is imperative we examine the redundancy in solving Schrodinger's equations throughout different types of potential situations: step, piecewise linear, and random Fourier series. This prjoect uses the TensorFlow package in Python to initially generate one-dimensional potentials and then solve them using a gradient descent method. These potentials and their respective solutions are partitioned into sets of training, validation, and test data. The training data is inputted into a simple neural network with two hidden layers. The mean square distance between the "correct"s olutions and the output of the neural network is the cost function and the gradient descent on the network "solves" the problem. 
 
+## Data Generation
 
-## Main ML Files in Repository
+* `genpotential.py`: We require training data for the neural network. We generate thousands of random potential functions and solve them with conventional methods and solve them individually.
 
-- Schrodinger Neural Network.ipynb
+## Neural Network
 
-- New Potentials.ipynb
-
-- gradient_descent.py
-
-- 1-D graphs.ipynb
-
-
-## Future Directions
-
-Please contact me if you are interested in extending/improving this project in any of the further points! 😄
-
-- extend study to three dimension solutions  😳
-
-- increase layers in neural network 🧠
-
-- using neural network for other aspects of Schrödinger’s equations (tell us other information about quantum state) 🔮
-
-- cross-validation techniques 📈
-
-- feature engineering to further reduce errors 📉
+* `schrodinger_nn.py`: We set up a simple neural network and solve the one-dimensional Schrodinger equation.
