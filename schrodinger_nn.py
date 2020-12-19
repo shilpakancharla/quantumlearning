@@ -2,6 +2,7 @@
     Reads training data from genpotential.py and then initalizes a neural network with two layers.
 """
 
+import matplotlib.pyplot as plt
 import os
 import csv
 import numpy as np
@@ -95,3 +96,10 @@ for step in range(100000):
         print(step, 'Train loss: ', sess.run(cost_function, feed_dict={X: train_x, Y: train_y}),
             'Valid loss: ', sess.run(cost_function, feed_dict={X: valid_x, Y: valid_y}))
     sess.run(train_step, feed_dict={X: train_x, Y: train_y})
+
+# Example plot
+potential_id = 1000
+plt.plot(sess.run(L3, feed_dict={X: [train_x[potential_id]]})[0])
+plt.plot([train_x[potential_id][i] / max(train_x[potential_id]) for i in range(bins - 1)])
+plt.plot(train_y[potential_id])
+plt.show()
