@@ -6,8 +6,8 @@ Computational models that use machine learning principles to solve quantum mecha
 
 ## Data Generation
 
-* `genpotential.py`: We require training data for the neural network. We generate thousands of random potential functions and solve them with conventional methods and solve them individually.
+* `genpotential.py`: We require training data for the neural network. We generate thousands of random potential functions and solve them with conventional methods and solve them individually. We currently use seed 0 to create the initial set of data, but we can modify this with a for loop to create more data.
 
 ## Neural Network
 
-* `schrodinger_nn.py`: We set up a simple neural network and solve the one-dimensional Schrodinger equation.
+* `schrodinger_nn.py`: We set up a simple neural network and solve the one-dimensional Schrodinger equation. We currently use seed 0 to read in the initial set of data, but we can modify this with a for loop to read in more data.
