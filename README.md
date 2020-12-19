@@ -10,4 +10,8 @@ Computational models that use machine learning principles to solve quantum mecha
 
 ## Neural Network
 
-* `schrodinger_nn.py`: We set up a simple neural network and solve the one-dimensional Schrodinger equation. We currently use seed 0 to read in the initial set of data, but we can modify this with a for loop to read in more data.
+* `schrodinger_nn.py`: We set up a simple neural network and solve the one-dimensional Schrodinger equation. We currently use seed 0 to read in the initial set of data, but we can modify this with a for loop to read in more data. There is additional code that can be modified for generating plots of the potentials and for saving the information about the weights and biases.
+
+## Visualization
+
+* `visualize.py`: Outputs bitmaps of the weights and biases from `schrodinger_nn.py`. Sorts them using the Guassian kernel to increase spatial correlation between weights and nodes. Doubles the size of the bitmap before generating the output. 

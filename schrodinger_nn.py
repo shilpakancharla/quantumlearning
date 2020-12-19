@@ -55,7 +55,7 @@ ic = 0
 learn_rate = tf.Variable(start_rate, trainable=False)
 update_learn_rate = tf.assign(learn_rate, tf.multiply(learn_rate, 0.75))
 
-# Set up neural network layers. 
+# Set up neural network layers
 X = tf.placeholder(tf.float32)
 Y = tf.placeholder(tf.float32)
 
@@ -96,6 +96,26 @@ for step in range(100000):
         print(step, 'Train loss: ', sess.run(cost_function, feed_dict={X: train_x, Y: train_y}),
             'Valid loss: ', sess.run(cost_function, feed_dict={X: valid_x, Y: valid_y}))
     sess.run(train_step, feed_dict={X: train_x, Y: train_y})
+
+# Saving the neural network
+with open('W1.csv', 'w') as f:
+    fileout = csv.writer(f)
+    fileout.writerows(sess.run(W1).tolist())
+with open('W2.csv', 'w') as f:
+    fileout = csv.writer(f)
+    fileout.writerows(sess.run(W2).tolist())
+with open('W3.csv', 'w') as f:
+    fileout = csv.writer(f)
+    fileout.writerows(sess.run(W3).tolist())
+with open('B1.csv', 'w') as f:
+    fileout = csv.writer(f)
+    fileout.writerows(sess.run(B1).tolist())
+with open('B2.csv', 'w') as f:
+    fileout = csv.writer(f)
+    fileout.writerows(sess.run(B2).tolist())
+with open('B3.csv', 'w') as f:
+    fileout = csv.writer(f)
+    fileout.writerows(sess.run(B3).tolist())
 
 # Example plot
 potential_id = 1000
